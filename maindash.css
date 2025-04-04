@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #2d3250;
+}
+
+.container {
+    width: 85%; /* Adjusted width for the container */
+    margin-left: 17%; /* Leave space for the sidebar */
+    padding: 20px;
+    background-color: rgba(241, 243, 255);
+    height: 100vh; /* Full height of the viewport */
+    position: fixed;
+    overflow-y: auto;
+}
+
+.box h2{
+    margin-top: 100px;
+}
+
+thead th {
+    background-color: #082477; /* Header background color */
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick to the top */
+    z-index: 10; /* Ensure it is above other content */
+}
+
+.borrow h2{
+    text-align: left;
+    margin-top: 300px;
+    font-size: 1.7rem;
+    color: #000000;
+}
+
+.container .upper{
+    border-radius: 5px;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 100%;
+    height: 8vh;
+    background-color: #ffffff;
+    position: fixed;
+}
+
+.upper h1{
+    padding-top: 20px;
+    padding-left: 10px;
+    text-align: left;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    display: flex; 
+    height: 100vh; 
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 16%; 
+    background-color: #082477;
+    padding: 20px; 
+    height: 100vh; 
+    position: fixed; 
+}
+
+.sidebar-image {
+    width: 100%; /* Make the image full width of the sidebar */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+/* Sidebar heading styles */
+.sidebar h2 {
+    margin-top: 10px;
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 2rem;
+}
+
+/* Sidebar link styles */
+.sidebar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin-top: 100px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.sidebar li {
+    margin: 60px 0; /* Space between links */
+}
+
+.sidebar a {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    text-decoration: none; /* Remove underline from links */
+    color: #f5f3f3; /* Default text color */
+    padding: 10px 15px; /* Padding around the link */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+footer a{
+    margin-bottom: 50px;
+}
+
+.sidebar a i {
+    margin-right: 25px;
+}
+
+.sidebar a:hover {
+    background-color: rgba(241, 243, 255);
+    border-radius: 5px;
+    height: 50px;
+    color: #333;
+}
+
+span{
+    color: red;
+}
+
+
+/* Table styles */
+table {
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 30px;
+    border-collapse: collapse; 
+    margin-top: 10px; /* Space above the table */
+    max-height: 90%; /* Set a maximum height for the table */
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: block; /* Allow scrolling */
+}
+
+/* Table header styles */
+th, td {
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 12px; /* More padding for better spacing */
+    text-align: center; /* Align text to the left */
+    font-size: 15px;
+}
+
+/* Row styling */
+tr {
+    border-bottom: 1px solid #ddd; /* Add a bottom border to rows */
+}
+
+/* Cell styling */
+td {
+    padding: 10px; /* Padding for table cells */
+}
+
+/* Alternating row colors */
+
+
+
+th:nth-child(1), td:nth-child(1) {
+    width: 10%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 10%;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 10%;
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 10%;
+}
+
+th:nth-child(5), td:nth-child(5) {
+    width: 10%;
+}
+
+th:nth-child(6), td:nth-child(6) {
+    width: 10%;
+}
+
+
+/* Styling for action icons */
+td a {
+    text-decoration: none; /* Remove underline from links */
+    color: #4CAF50; /* Green color for links */
+    margin-right: 10px; /* Space between icons */
+}
+
+td a:hover {
+    color: #d9534f; /* Change color on hover */
+}
+
+  
+th { 
+    color: rgb(230, 223, 223);
+    font-size: 1rem;
+}
+
+/* Row styles */
+
+
+tr:hover {
+    background-color: #082477; /* Slightly darker gray on hover */
+    color: white;
+}
+
+/* Link styles */
+a {
+    display: inline-block; /* Make the link a block element */
+    margin-top: 15px; /* Space above the link */
+    text-decoration: none; /* Remove underline */
+    color: #4CAF50; /* Green color for the link */
+    font-weight: bold; /* Bold text */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.add-btn {
+    background-color: #c23e16;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: lighter;
+    transition: 0.3s;
+    margin-left: 30px;
+    margin-top: -80px;
+    margin-bottom: 50px;
+}
+
+
+.add-btn:hover {
+    background-color: #082477;
+}
+
+
+.table-box table a {
+    font-size: 18px; 
+    color: #193d46; 
+    display: inline-flex; /* Use inline-flex for better alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+    margin-left: 10px;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    text-align: center;
+    margin-top: 5px;
+}
+
+.table-box a:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+.table-box a i {
+    justify-content: center; 
+}
+
+
+.admin-icon {
+    margin-left: 5px; /* Space between name and icon */
+    color: #007bff; /* Icon color */
+}
+
+
+.borrow table{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding-top: -10px;
+  }
+
+  .box {
+    background-color: white; /* White background for the box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 100px auto; /* Center the box horizontally with auto margin */
+    width: 70%; /* Full width */
+    height: auto; /* Allow height to adjust based on content */
+    margin-left: 50px;
+}
+
+.box h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark text color for the heading */
+    margin-top: 10px; /* Space below the heading */
+    margin: 10px;
+}
+
+.row {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    margin-bottom: 10px; /* Space below each row */
+}
+
+.row p {
+    flex: 1; /* Allow paragraphs to take equal space */
+    margin: 10px; /* Remove default margin */
+    color: #555; /* Dark gray text color for paragraphs */
+    margin-left: 50px;
+
+
+}
+
+.box-upgrade {
+    position: absolute; /* Position relative to the nearest positioned ancestor */
+    right: 150px; /* Align to the right with some margin */
+    top: 120px; /* Adjust vertical position */
+    background-color: #082477;
+    color: white; /* White text for contrast */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    width: 220px; /* Set a fixed width for the upgrade box */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Deeper shadow for more depth */
+    height: auto; /* Allow height to adjust based on content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Add a hover effect */
+.box-upgrade:hover {
+    transform: translateY(-5px); /* Lift the box slightly on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Increase shadow on hover */
+}
+
+/* Style for the heading */
+.box-upgrade h3 {
+    font-size: 1.5em; /* Increase font size */
+    margin-bottom: 10px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+    text-transform: uppercase; /* Make the heading uppercase */
+}
+
+/* Style for the paragraph */
+.box-upgrade p {
+    font-size: 0.9em; /* Slightly smaller font size */
+    margin-bottom: 15px; /* Space below the paragraph */
+    text-align: center; /* Center the text */
+}
+
+/* Upgrade button styles */
+.upgrade-button {
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 15px; /* Space above the button */
+    width: 100%; /* Full width */
+}
+
+/* Button hover effect */
+.upgrade-button:hover {
+    background-color: darkblue; /* Change to dark blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}

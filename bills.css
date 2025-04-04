@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #2d3250;
+}
+
+.container {
+    width: 85%; /* Adjusted width for the container */
+    margin-left: 17%; /* Leave space for the sidebar */
+    padding: 20px;
+    background-color: rgba(241, 243, 255);
+    height: 100vh; /* Full height of the viewport */
+    position: fixed;
+    overflow-y: auto;
+}
+
+.box h2{
+    margin-top: 100px;
+}
+
+thead th {
+    background-color: #082477; /* Header background color */
+    position: sticky; /* Make the header sticky */
+    top: 0;
+    z-index: 10;
+}
+
+.borrow h2{
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 1.9rem;
+    color: #000000;
+}
+
+.container .upper{
+    border-radius: 5px;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 100%;
+    height: 8vh;
+    background-color: #ffffff;
+    position: fixed;
+}
+
+.upper h1{
+    padding-top: 20px;
+    padding-left: 10px;
+    text-align: left;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    display: flex; 
+    height: 100vh; 
+}
+
+
+.sidebar {
+    width: 16%; 
+    background-color: #082477;
+    padding: 20px; 
+    height: 100vh; 
+    position: fixed; 
+}
+
+
+
+.sidebar h2 {
+    margin-top: 10px;
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 2rem;
+}
+
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 100px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.sidebar li {
+    margin: 60px 0;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f5f3f3;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+footer a{
+    margin-bottom: 50px;
+}
+
+.sidebar a i {
+    margin-right: 25px;
+}
+
+.sidebar a:hover {
+    background-color: rgba(241, 243, 255);
+    border-radius: 5px;
+    height: 50px;
+    color: #333;
+}
+
+span{
+    color: red;
+}
+
+
+
+table {
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 10px;
+    border-collapse: collapse; 
+    margin-top: 10px;
+    max-height: 90%;
+    overflow-y: auto;
+    display: block;
+}
+
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+
+td {
+    padding: 10px;
+}
+
+
+
+
+
+th:nth-child(1), td:nth-child(1) {
+    width: 2.5%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 5%;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 5%;
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 5%;
+}
+
+th:nth-child(5), td:nth-child(5) {
+    width: 2.5%;
+}
+
+th:nth-child(6), td:nth-child(6) {
+    width: 5%;
+}
+
+th:nth-child(7), td:nth-child(7) {
+    width: 2.5%;
+}
+
+th:nth-child(8), td:nth-child(8) {
+    width: 5%;
+}
+
+
+
+/* Styling for action icons */
+td a {
+    text-decoration: none;
+    color: #4CAF50;
+    margin-right: 10px;
+}
+
+td a:hover {
+    color: #d9534f;
+}
+
+  
+th { 
+    color: rgb(230, 223, 223);
+    font-size: 1rem;
+}
+
+
+
+
+tr:hover {
+    background-color: #082477; 
+    color: white;
+}
+
+
+a {
+    display: inline-block; 
+    margin-top: 15px;
+    text-decoration: none; 
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.add-btn {
+    background-color: #c23e16;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: lighter;
+    transition: 0.3s;
+    margin-left: 10px;
+    margin-top: -80px;
+    margin-bottom: 50px;
+}
+
+
+.add-btn:hover {
+    background-color: #082477;
+}
+
+.edit-btn {
+    background-color: #c23e16;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: lighter;
+    transition: 0.3s;
+    margin-left: 50px;
+    margin-top: -80px;
+    margin-bottom: 50px;
+}
+
+
+.edit-btn:hover {
+    background-color: #082477;
+}
+
+.view-btn {
+    background-color: #c23e16;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: lighter;
+    transition: 0.3s;
+    margin-left: 50px;
+    margin-top: -80px;
+    margin-bottom: 50px;
+}
+
+
+.view-btn:hover {
+    background-color: #082477;
+}
+
+.table-box table a {
+    font-size: 18px; 
+    color: #193d46; 
+    display: inline-flex; /* Use inline-flex for better alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+    margin-left: 10px;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    text-align: center;
+    margin-top: 5px;
+}
+
+.table-box a:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+.table-box a i {
+    justify-content: center; 
+}
+
+/* General button styles */
+.archive-btn, .delete-btn{
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Specific styles for Archive and Delete buttons */
+.archive-btn {
+    background-color: #28a745; /* Green for Archive */
+}
+
+.delete-btn {
+    background-color: #dc3545; /* Red for Delete */
+}
+
+/* Hover effects for Archive and Delete buttons */
+.archive-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.delete-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.borrow table{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding-top: -10px;
+  }
+
+
+
+
