@@ -4,9 +4,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 include '../views/db.php'; 
-require 'C:/xampp/htdocs/Split-Wise/myProject/PHPMailer-master/src/Exception.php'; 
-require 'C:/xampp/htdocs/Split-Wise/myProject/PHPMailer-master/src/PHPMailer.php'; 
-require 'C:/xampp/htdocs/Split-Wise/myProject/PHPMailer-master/src/SMTP.php'; 
+require 'C:/xampp/htdocs/PayFlow/myProject/PHPMailer-master/src/Exception.php'; 
+require 'C:/xampp/htdocs/PayFlow/myProject/PHPMailer-master/src/PHPMailer.php'; 
+require 'C:/xampp/htdocs/PayFlow/myProject/PHPMailer-master/src/SMTP.php'; 
 
 // Initialize variablesd
 $lastNameError = $firstNameError = $nicknameError = $emailError = $usernameError = $passwordError = $confirmPasswordError = "";
